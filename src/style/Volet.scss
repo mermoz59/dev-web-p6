@@ -12,7 +12,6 @@
         justify-content: space-between;
         align-items: center;
         background-color: #FF6060;
-        width: 75%;
         height: 50px;
         padding: 0 1%;
         border-radius: 5px;
@@ -25,13 +24,16 @@
 
     .collapse__content {
         background-color: #F7F7F7;
-        border-radius: 5px;
-        width: 77%;
+        border-radius: 0 0 5px 5px;
         height: auto;
-        padding: 10px 20px;
+        padding: 20px 20px;
         box-sizing: border-box;
         color: #FF6060;
         font-size: 20px;
+
+        p {
+            margin: 0;
+        }
     }
 
     @media (max-width: 900px) {

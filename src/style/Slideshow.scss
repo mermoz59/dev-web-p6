@@ -1,0 +1,35 @@
+.slideshow-image-container {
+    width: 100%;
+    height: 415px;
+    margin-top: 25px;
+    position: relative;
+    margin-bottom: 30px;
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    .slideshow-nav {
+        .slideshow-nav-button-prev {
+            position: absolute;
+            left: 0%;
+            top: 40%;
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin-left: 25px;
+        }
+        .slideshow-nav-button-next {
+            position: absolute;
+            right: 0%;
+            top: 40%;
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin-right: 25px;
+        }
+    }
+}

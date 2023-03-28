@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from '../components/Nav';
 import Banner from '../components/Banner';
-import Volet from '../components/Volet'
+import Volet from '../components/Volet';
 import Footer from '../components/Footer';
 import '../style/About.css';
 import bannerAbout from '../assets/banner-about.png'
