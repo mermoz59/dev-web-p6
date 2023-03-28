@@ -11,4 +11,11 @@
     flex-wrap: wrap;
     gap: 5%;
     overflow: auto;
+
+    @media (max-width: 900px) {
+        background-color: white;
+        overflow-y: hidden;
+        height: auto;
+        padding: 0;
+    }
 }

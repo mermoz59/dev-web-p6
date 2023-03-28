@@ -4,12 +4,13 @@ import Banner from '../components/Banner';
 import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
 import '../style/Home.css';
+import Bannerimg from '../assets/banner.png'
 
 function Home() {
   return (
     <div className='body'>
       <Nav />
-      <Banner />
+      <Banner backgroundImage={Bannerimg} title="Chez vous, partout et ailleurs" />
       <Gallery />
       <Footer />
     </div>

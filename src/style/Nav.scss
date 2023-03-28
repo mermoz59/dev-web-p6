@@ -28,6 +28,24 @@ nav {
       }
     }
   }
+  @media (max-width: 900px) {
+    img {
+      height: 10%;
+      width: 20%;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 60px;
+  
+      li {
+  
+        a {
+          font-size: calc(12px + 1vw);
+        }
+      }
+    }
+}
 }
 
 

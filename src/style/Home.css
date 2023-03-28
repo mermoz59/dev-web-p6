@@ -37,3 +37,9 @@ h1, h2 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #FF6060;
 }
+
+@media (max-width: 900px) {
+    .body {
+        padding: 0 20px;
+    }
+}
