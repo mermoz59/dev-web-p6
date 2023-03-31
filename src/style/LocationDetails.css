@@ -1,4 +1,4 @@
-.location-details-container {
+.location-details-top {
     display: flex;
     gap: 10%;
 }
@@ -26,7 +26,6 @@ h2 {
     margin: 0;
     padding: 0;
     gap: 10px;
-    margin-bottom: 25px;
 }
 
 .location-details-volet {
@@ -82,5 +81,50 @@ h2 {
     display: flex;
     justify-content: end;
     margin-top: 13px;
+}
+
+.location-details-bot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.volet__left {
+    width: 45%;
+}
+
+.volet__right {
+    width: 45%;
+}
+
+@media (max-width: 900px) {
+    .location-details-top {
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    .location-details-right {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .location-details-bot {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .volet__left {
+        width: 100%;
+    }
+    
+    .volet__right {
+        width: 100%;
+    }
+
+    
 }
 

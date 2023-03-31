@@ -25,35 +25,42 @@ function LocationDetails() {
         <Nav />
 
         <Slideshow pictures={location.pictures} />
-      <div className="location-details-container">
-        <div className="location-details-left">
-          <h2>{location.title}</h2>
-          <p>{location.location}</p>
-          <ul>
-            {location.tags.map((tag, index) => (
-              <li key={index}>{tag}</li>
-            ))}
-          </ul>
-          <Volet title="Description" width='98%' widthdesc='100%'>
-            <p>{location.description}</p>
-          </Volet>
-        </div>
-        <div className="location-details-right">
-          <div className="details__host">
-              <img src={location.host.picture} alt="" />
-              <p>{location.host.name}</p>
-          </div>
-          <p className='rating-star'>{getRatingStars(location.rating)}</p>
-          <Volet title="Equipements" width='98%' widthdesc='100%'>
-            <ul>
-                {location.equipments.map((equipment, index) => (
-                <li key={index}>{equipment}</li>
+      
+        <div className="location-details-top">
+          <div className="location-details-left">
+              <h2>{location.title}</h2>
+              <p>{location.location}</p>
+              <ul>
+                {location.tags.map((tag, index) => (
+                  <li key={index}>{tag}</li>
                 ))}
-            </ul>
-          </Volet>
+              </ul>
+            </div>
+            <div className="location-details-right">
+                <div className="details__host">
+                    <img src={location.host.picture} alt="" />
+                    <p>{location.host.name}</p>
+                </div>
+                <p className='rating-star'>{getRatingStars(location.rating)}</p>
+            </div>
         </div>
-      </div>
-    
+        <div className="location-details-bot">
+            <div className="volet__left">
+                <Volet title="Description" width='98%' widthdesc='100%'>
+                <p>{location.description}</p>
+                </Volet>
+            </div>
+            <div className="volet__right">
+                <Volet title="Equipements" width='98%' widthdesc='100%'>
+                <ul>
+                    {location.equipments.map((equipment, index) => (
+                    <li key={index}>{equipment}</li>
+                    ))}
+                </ul>
+                </Volet>
+            </div>
+        </div>
+        
         <Footer />
       </div>
     );
