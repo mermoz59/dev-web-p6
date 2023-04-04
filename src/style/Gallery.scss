@@ -1,5 +1,5 @@
 .gallery {
-    height: 830px;
+    height: auto;
     width: 100%;
     background-color: #f7f7f7;
     margin: 40px 0;
@@ -10,7 +10,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5%;
-    overflow: auto;
 
     @media (max-width: 900px) {
         background-color: white;

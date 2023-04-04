@@ -1,18 +1,29 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import '../style/Nav.scss';
 import logo from '../assets/Logo.png';
 
 function Nav() {
+
+  const location = useLocation();
+
+
   return (
     <nav>
-      <img src={logo} alt="Logo" />
+      <Link to="/"><img src={logo} alt="Logo" /></Link>
       <ul>
         <li>
-          <Link to="/">Accueil</Link>
+        <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
+            Accueil
+          </Link>
         </li>
         <li>
-          <Link to="/about">A propos</Link>
+          <Link
+            to="/about"
+            className={location.pathname === '/about' ? 'active' : ''}
+          >
+            A propos
+          </Link>
         </li>
       </ul>
     </nav>

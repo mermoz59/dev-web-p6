@@ -3,6 +3,25 @@
     width: 30%;
     position: relative;
     border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 50px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0) 50%,
+          rgba(0, 0, 0, 0.5) 100%
+        );
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+        pointer-events: none;
+    }
 
     img {
         object-fit: cover;
@@ -10,6 +29,7 @@
         width: 100%;
         display: block;
         border-radius: 10px;
+        z-index: 2;
     }
 
     h2 {
@@ -19,7 +39,9 @@
         color: white;
         font-size: 18px;
         font-weight: 500;
+        z-index: 3;
     }
+
 
     @media (max-width: 900px) {
         width: 100%;

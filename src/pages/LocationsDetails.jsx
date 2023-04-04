@@ -3,7 +3,8 @@ import Nav from '../components/Nav';
 import Slideshow from '../components/Slideshow';
 import Volet from '../components/Volet';
 import Footer from '../components/Footer';
-import { useParams } from 'react-router-dom';
+import ErrorPage from './ErrorPage';
+import { useParams, useNavigate } from 'react-router-dom';
 import '../style/LocationDetails.css';
 import data from '../data/data.json';
 
@@ -11,14 +12,20 @@ function LocationDetails() {
 
     const { id } = useParams();
     const location = data.find(location => location.id === id);
+    const navigate = useNavigate();
     const getRatingStars = (rating) => {
-        const stars = [];
-        for (let i = 0; i < 5; i++) {
-          const starClass = (i < rating) ? "star filled" : "star empty";
-          stars.push(<i key={i} className={starClass}></i>);
-        }
-        return stars;
+      const stars = [];
+      for (let i = 0; i < 5; i++) {
+        const starClass = (i < rating) ? "star filled" : "star empty";
+        stars.push(<i key={i} className={starClass}></i>);
+      }
+      return stars;
     };
+
+    if (!location) {
+      navigate('/error');
+      return (<ErrorPage />); // ou un composant pour la page d'erreur
+    }
 
     return (
       <div className='body'>
