@@ -1,8 +1,6 @@
 import React from 'react';
-import Nav from '../components/Nav';
 import Slideshow from '../components/Slideshow';
 import Volet from '../components/Volet';
-import Footer from '../components/Footer';
 import ErrorPage from './ErrorPage';
 import { useParams, useNavigate } from 'react-router-dom';
 import '../style/LocationDetails.css';
@@ -28,8 +26,8 @@ function LocationDetails() {
     }
 
     return (
-      <div className='body'>
-        <Nav />
+      <div>
+      
 
         <Slideshow pictures={location.pictures} />
       
@@ -68,7 +66,7 @@ function LocationDetails() {
             </div>
         </div>
         
-        <Footer />
+      
       </div>
     );
   }

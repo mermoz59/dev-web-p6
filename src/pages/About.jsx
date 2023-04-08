@@ -1,15 +1,12 @@
 import React from 'react';
-import Nav from '../components/Nav';
 import Banner from '../components/Banner';
 import Volet from '../components/Volet';
-import Footer from '../components/Footer';
 import '../style/About.css';
 import bannerAbout from '../assets/banner-about.png'
 
 function About() {
   return (
-    <div className='body'>
-      <Nav />
+    <div>
       <Banner backgroundImage={bannerAbout} title=""/>
       <Volet title="Fiabilité">
           <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
@@ -23,7 +20,6 @@ function About() {
       <Volet title="Responsabilité">
           <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.</p>
       </Volet>
-      <Footer />
     </div>
   );
 }

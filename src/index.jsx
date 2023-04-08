@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import LocationDetails from './pages/LocationsDetails';
@@ -11,12 +13,16 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <React.StrictMode>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/locations/:id" element={<LocationDetails />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
+      <div className='body'>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/locations/:id" element={<LocationDetails />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+        <Footer />
+      </div>
     </React.StrictMode>
   </BrowserRouter>
 );
