@@ -22,7 +22,7 @@ function LocationDetails() {
 
     if (!location) {
       navigate('/error');
-      return (<ErrorPage />); // ou un composant pour la page d'erreur
+      return (<ErrorPage />);
     }
 
     return (
