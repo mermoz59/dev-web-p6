@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.035f4df4.css",
-    "main.js": "/static/js/main.39d21cfd.js",
-    "static/js/787.cca3b672.chunk.js": "/static/js/787.cca3b672.chunk.js",
-    "static/media/banner-about.png": "/static/media/banner-about.640955dab8c7bff25514.png",
-    "static/media/banner.png": "/static/media/banner.40dbe4aeff1168fc831e.png",
-    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.e20d5327f1a05620c084.ttf",
-    "index.html": "/index.html",
-    "main.035f4df4.css.map": "/static/css/main.035f4df4.css.map",
-    "main.39d21cfd.js.map": "/static/js/main.39d21cfd.js.map",
-    "787.cca3b672.chunk.js.map": "/static/js/787.cca3b672.chunk.js.map"
+    "main.css": "/dev-web-p6/static/css/main.39cc6f1b.css",
+    "main.js": "/dev-web-p6/static/js/main.09b3c0a4.js",
+    "static/js/787.cca3b672.chunk.js": "/dev-web-p6/static/js/787.cca3b672.chunk.js",
+    "static/media/banner-about.png": "/dev-web-p6/static/media/banner-about.640955dab8c7bff25514.png",
+    "static/media/banner.png": "/dev-web-p6/static/media/banner.40dbe4aeff1168fc831e.png",
+    "static/media/Montserrat-Regular.ttf": "/dev-web-p6/static/media/Montserrat-Regular.e20d5327f1a05620c084.ttf",
+    "index.html": "/dev-web-p6/index.html",
+    "main.39cc6f1b.css.map": "/dev-web-p6/static/css/main.39cc6f1b.css.map",
+    "main.09b3c0a4.js.map": "/dev-web-p6/static/js/main.09b3c0a4.js.map",
+    "787.cca3b672.chunk.js.map": "/dev-web-p6/static/js/787.cca3b672.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.035f4df4.css",
-    "static/js/main.39d21cfd.js"
+    "static/css/main.39cc6f1b.css",
+    "static/js/main.09b3c0a4.js"
   ]
 }
